@@ -1,0 +1,44 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+    <title>Mado</title>
+    <link rel="stylesheet" href="~/lib/bootstrap/dist/css/bootstrap.min.css"/>
+    @RenderSection("product", required: false)
+    <link rel="stylesheet" href="~/css/site.css" asp-append-version="true"/>
+    <link rel="stylesheet" href="~/MVC_Project1.styles.css" asp-append-version="true"/>
+</head>
+<body>
+<header>
+    <nav class="navbar navbar-expand-sm navbar-toggleable-sm navbar-light bg-white border-bottom box-shadow mb-3">
+        <a class="navbar-brand logo" asp-area="" asp-controller="Home" asp-action="Index">
+            <img src="https://mado.az/images/logo.svg"/>
+        </a>
+    </nav>
+</header>
+<div class="container">
+    <main role="main" class="pb-3 main-container">
+        @RenderBody()
+    </main>
+</div>
+
+<footer class="border-top footer text-muted position-static">
+    <div class="container d-flex justify-content-between">
+        <a class="footer-logo"><img src="https://mado.az/images/logo.svg"/></a>
+        <ul class="footer-nav">
+            <li><a href="#">Home</a></li>
+            <li><a href="#">Foods</a></li>
+            <li><a href="#">Sweets</a></li>
+            <li><a href="#">Juicy</a></li>
+            <li><a href="#">Contact</a></li>
+        </ul>
+    </div>
+    <p>&copy; 2024 - Mado - Rights are protected</p>
+</footer>
+<script src="~/lib/jquery/dist/jquery.min.js"></script>
+<script src="~/lib/bootstrap/dist/js/bootstrap.bundle.min.js"></script>
+<script src="~/js/site.js" asp-append-version="true"></script>
+@await RenderSectionAsync("Scripts", required: false)
+</body>
+</html>

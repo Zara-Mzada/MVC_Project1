@@ -1,0 +1,86 @@
+html {
+  font-size: 14px;
+}
+
+@media (min-width: 768px) {
+  html {
+    font-size: 16px;
+  }
+}
+
+.btn:focus, .btn:active:focus, .btn-link.nav-link:focus, .form-control:focus, .form-check-input:focus {
+  box-shadow: 0 0 0 0.1rem white, 0 0 0 0.25rem #258cfb;
+}
+
+html {
+  position: relative;
+  min-height: 100%;
+}
+
+body {
+  margin-bottom: 60px;
+}
+.logo{
+  display: block;
+  margin: 0 auto;
+}
+.product-container-a{
+  display: block;
+}
+.product-container{
+  width: 80%;
+  margin: 20px auto;
+  padding: 15px;
+  border: 1px solid black;
+  border-radius: 5px;
+  background-color: #0d6efd;
+  display: flex;
+  justify-content: space-between;
+}
+.product-container img{
+  display: block;
+  width: 200px;
+  height: 200px;
+  border-radius: 3px;
+}
+.product-container .text{
+  width: 60%;
+}
+.product-container .text h2{
+  font-size: 30px;
+  font-weight: bold;
+  color: white;
+}
+.product-container .text p{
+  font-size: 20px;
+  font-weight: 500;
+  margin: 20px 0;
+  color: white;
+}
+.product-container .text a{
+  color: white;
+  font-size: 20px;
+  font-weight: bolder;
+  cursor: pointer;
+}
+.footer{
+  line-height: 16px !important;
+  padding-top: 20px;
+}
+.footer-nav{
+  list-style: none;
+  padding: 0;
+}
+.footer-nav li{
+  padding: 0;
+  margin-bottom: 20px;
+}
+.footer-nav li a{
+  margin: 0;
+  padding: 0;
+  text-decoration: none;
+  color: #031e47;
+}
+.footer p{
+  text-align: center;
+}

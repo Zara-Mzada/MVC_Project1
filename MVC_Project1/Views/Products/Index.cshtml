@@ -1,0 +1,13 @@
+@model List<Products>
+@{
+    Layout = "_Layout";
+}
+@section product
+{
+<link rel="stylesheet" href="~/css/product.css" />
+}
+
+@foreach (Products products in Model)
+{
+    @await Html.PartialAsync("Partial/Products", products);
+}

@@ -1,0 +1,7 @@
+﻿@model List<Home>
+
+
+@foreach (Home home in Model)
+{
+    @await Html.PartialAsync("Partial/HomeProduct", home)
+}

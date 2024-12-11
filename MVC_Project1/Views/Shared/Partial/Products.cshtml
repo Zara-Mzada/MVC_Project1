@@ -1,0 +1,10 @@
+@model Products
+
+<div class="product-card @(Model.IsCool? "cool" : "notcool")">
+    <img src=@Model.ImageURL>
+    <div class="product-details">
+        <h2 class="product-name">@Model.Name</h2>
+        <p class="product-price">@Model.Price</p>
+        <a href="#">Details</a>
+    </div>
+</div>

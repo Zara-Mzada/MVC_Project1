@@ -1,0 +1,14 @@
+@model Home
+
+<div class="product-container">
+    <img src= @Model.ImageUrl />
+    <div class="text">
+        <h2>@Model.Header</h2>
+        <p>@Model.Text</p>
+        <a asp-action="Index" asp-controller="Products" asp-route-id = "@Model.ID">See More</a>
+    </div>
+</div>
+
+
+
+
